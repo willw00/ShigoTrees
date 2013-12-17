@@ -34,7 +34,7 @@ img.touchtrees {
 	color: rgb(255, 0, 0);
 }
 
-.column-container:after {
+div.column-container:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -48,7 +48,7 @@ img.touchtrees {
   font-size: 13px;
 }
 
-div.column-container h3 {
+div.column-container h3.subtitle {
 	margin-left: 1.5%;
 }
 
@@ -88,9 +88,27 @@ h4.title {
 	margin-left: 0px;
 	margin-top: 0px;
 }
+
 img.centered {
+	display: block;
 	margin: 0 auto;
 }
+
 h3.centered {
+	display: block;
+	width: 614px;
 	margin: 0 auto;
+}
+
+.column-container p {
+	text-indent: 20px;
+	width: 740px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+.column-container p.subtext {
+	width: 340px;
+	text-align: center;
+	font-style: italic;
 }
