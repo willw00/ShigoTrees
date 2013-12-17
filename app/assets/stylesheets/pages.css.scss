@@ -1,0 +1,96 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img.touchtrees {
+	margin-left: 250px;
+	margin-top: 20px;
+}
+
+.announcement p {
+	text-align: center;
+	font-family: 'Trebuchet MS', Veranda, Arial, sans-serif;
+}
+
+.announcement p:nth-child(1) {
+	font-weight: bold;
+}
+
+.announcement p:nth-child(2) {
+	text-decoration: underline;
+	font-size: 16px;
+	color: rgb(0, 112, 192);
+}
+
+.announcement p:nth-child(3) {
+	text-decoration: underline;
+	font-size: 14px;
+	color: rgb(0, 112, 192);
+}
+
+.announcement p:nth-child(4) {
+	font-style: italic;
+	font-size: 12px;
+	color: rgb(255, 0, 0);
+}
+
+.column-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+div.column-container h3 {
+	margin-left: 1.5%;
+}
+
+.col-1-3 {
+	width: 30.3%;
+	margin: 0 1.5%;
+}
+
+.col-2-3 {
+	width: 63.6%;
+	margin: 0 1.5%;
+	font-family: Verdana;
+
+	p {
+		text-indent: 20px;
+	}
+
+	p.date {
+		margin-top: 0px;
+		text-indent: 0px;
+	}
+
+	img.shigo-right {
+		float: right;
+		margin-top: 30px;
+	}
+
+	img.shigo-left {
+		float: left;
+	}
+}
+
+h4.title {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+img.centered {
+	margin: 0 auto;
+}
+h3.centered {
+	margin: 0 auto;
+}

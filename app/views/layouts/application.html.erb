@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %> - Shigo and Trees</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<p id="login">Welcome [<%= link_to "Login", "#" %> | <%= link_to "Register", "#" %>] </p>
+			<div class="logo"><%= image_tag "HeaderLogo.jpg", alt: "Shigo logo" %></div>
+			<nav>
+				<ul>
+					<li class="gold"><%= link_to "Home", pages_home_path %></li>
+					<li class="red"><%= link_to "Alex Shigo", pages_alex_path %></li>
+					<li class="purple"><a href="#">Books</a></li>
+					<li class="blue"><a href="#">CD's/DVD's</a></li>
+					<li class="brown"><a href="#">Pamphlets</a></li>
+					<li class="teal"><a href="#">Offshoots</a></li>
+					<li class="green"><a href="#">Your Cart</a></li>
+				</ul>
+			</nav>
+			<%= image_tag "HeaderImages.jpg", alt: "Tree images", id: "TreeImages" %>
+		</header>
+		<div class="info">
+			<a href="#"><%= link_to "About Us", pages_about_path %></a> |
+			<a href="#">How To Place an Order</a> |
+			<a href="#">Scholarships</a> |
+			<a href="#">Workshops</a> |
+			<a href="#">Contact Us</a>
+		</div>
+	<%= yield %>
+	</div>
+</body>
+</html>
