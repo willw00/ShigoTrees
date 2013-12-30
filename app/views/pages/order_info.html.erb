@@ -1,0 +1,137 @@
+ <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+
+  <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Ways To Order</a></li>
+    <li><a href="#tabs-2">Order Form</a></li>
+    <li><a href="#tabs-3">Payment</a></li>
+    <li><a href="#tabs-4">Bulk/Discounts</a></li>
+    <li><a href="#tabs-5">Shipping</a></li>
+    <li><a href="#tabs-6">Return Policy</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>An order may be placed in one of several ways, whichever is most convenient for you. See Payment information.</p>
+    
+		<ol>
+			<li>Directly from this website, click on any of the categories above and select items for purchase. Submit your request and Visa or MasterCard payment details.</li>
+			<li>Send an e-mail with your request, shipping information and credit card payment details. You may split your credit card information across two or more successive messages.</li>
+			<li>Phone the number below and leave pertinent information, including a return phone number in case there are any questions. Please speak clearly.</li>
+			<li>Fax your request with contact and shipping information and credit card payment details.</li>
+			<li>Purchase Order from a company or business sent either as a fax, e-mail attachment or through the mail.</li>
+			<li>Order Form sent as a fax, e-mail attachment or through the mail.</li>
+		</ol>
+  </div>
+  <div id="tabs-2">
+    <p> 
+    	To order books, pamphlets and CD's/DVD's, click to view and/or print the <%= link_to "order form", "/images/web_order_form_list_Jan_13.jpg", target: :blank %>. To order t-shirts and bumper stickers click to view and/or print the <%= link_to "t-shirts and bumper stickers order form", "/images/t-shirts_bmprstkrs_order_form_Jan_13.jpg", target: :blank %>. The forms may also be completed and returned via e-mail attachment or fax.
+    </p>
+  </div>
+  <div id="tabs-3">
+		
+		<ul>
+				<li> Payment must be in US dollars.</li>
+				<li> 
+					Wire transfers or checks must be <u>received</u> for the full amount of the purchase; any bank fees or transfer expenses are the responsibility of the buyer. 
+				</li>
+		
+			<li>	
+				Credit Card Processing - Be sure that the billing address matches the credit card in use.  The most cost-effective shipping rate (see Shipping information) will be used and will be reflected on your credit card receipt. An e-mailed credit card receipt will be generated on acceptance of the payment. A hard copy receipt will be included with the shipment, along with a full receipt of the complete order.
+			</li>
+		</ul>
+  </div>
+  <div id="tabs-4">
+  	<p>
+  		Some items are priced by quantity or grouping.  Please be sure to check for your best rate.  If you are a book store, reseller, educational institution, or other group that will order frequently or in quantities, please <%= link_to "contact", pages_contact_path %> Shigo and Trees for possible discounts.
+  	</p>
+  	<p>
+  		Please be sure to note the quantity pricing on pamphlets when completing your order.  These rates are:
+  	</p>
+  	<table>
+  		<tr>
+  			<td><u>Copies</u></td>
+  			<td><u>Price</u></td>
+  		</tr>
+  		<tr>
+  			<td>1-9</td>
+  			<td>$3.00 ea</td>
+  		</tr>
+  		<tr>
+  			<td>10-99</td>
+  			<td>$2.00 ea</td>
+  		</tr>
+  		<tr>
+  			<td>100-999</td>
+  			<td>$1.50 ea</td>
+  		</tr>
+  		<tr>
+  			<td>1000+</td>
+  			<td>$1.00 ea</td>
+  		</tr>
+  	</table>
+  	<p>
+  		See the <%= link_to "order form", "/images/web_order_form_list_Jan_13.jpg", target: :blank %> for other price groups.
+  	</p>
+  	
+  	<ul>
+  		<li>
+  	  		<%= link_to "Dr. Shigo's Tree Series FIX", "#" %> is sold as a single item and is comprised of one copy each of the nine hard and soft covered books: <%= link_to "100 Tree Myths FIX", "#" %>, <%= link_to "Modern Arboriculture FIX", "#" %>, <%= link_to "New Tree Biology and Dictionary set FIX", "#" %>, <%= link_to "The Nature of Tree Care: Conversations with Alex Shigo FIX", "#" %>, <%= link_to "Tree Anatomy FIX", "#" %>, <%= link_to "Tree Basics FIX", "#" %>, <%= link_to "Tree Pithy Points FIX", "#" %>, <%= link_to "Tree Pruning FIX", "#" %>, <%= link_to "Tree Pruning Basics FIX", "#" %>.  The series is $278 and represents a 20% discount from the individually priced items.
+  	  	</li>
+  	  	
+  	  	
+  	  	<li>
+  	  		The <%= link_to "Complete Library FIX", "#" %> of Shigo and Trees, Associates includes one copy each of the nine books, as well as one each of the four pamphlets, plus one each of the <%= link_to "Backyard Pathology DVD FIX", "#" %>, <%= link_to "Trees, Associates and Shigo CD of 5,000 photos FIX", "#" %>, and <%= link_to "The Alex L. Shigo Story DVD FIX", "#" %> at $428, representing a 20% discount from the individually priced items.
+  	  	</li>
+  	  </ul>
+  	
+  </div>
+  <div id="tabs-5">
+  	<ul>
+  		<li>Shipping options are UPS or US Postal Service</li> 
+  		<li>
+  			Most items will ship via US Postal Service "flat rate" packaging where appropriate, as this service is usually the most cost-effective and quickest.
+  		</li> 
+  		<li>
+  			Large overseas shipments may be shipped via a freight carrier. If you have a preference for how you would like your order shipped, please so note when placing your order, otherwise the most cost-effective method will be used. Pricing is dependent on the size and weight of the order.
+  		</li> 
+  		<li>
+  			In some cases, a better rate may be available and your payment will reflect a reduced charge (see some pricing examples below).
+  		</li> 
+  		<li>
+  			Shipping reflects current postal service and other rates only. Shipping costs DO NOT include any brokerage, customs or other fees that may be assessed by the delivery company or the country's postal service. If delivery requires the payment of any additional fees, these fees are the responsibility of the buyer.
+  		</li> 
+  		<li>
+  			Shipment is typically within the week of order placement, excluding weekends and holidays. Your order will not ship: 
+  			<ol>
+  				<li>if there are difficulties processing your credit card</li> 
+  				<li>if you do not include any shipping costs</li> 
+  				<li>if you do not provide sufficient address information</li>
+  				<li>if you request verification of shipping costs to your credit card before order processing</li>
+  				<li>during weekends or holidays</li>
+  			</ol>
+  		</li>
+  	</ul>
+
+		<p>Sample Shipping Rates for items OUTSIDE the USA (actual rates may vary depending on quantity of items ordered):</p>		
+		<ul>
+			<li>
+				1 copy <%= link_to "Modern Arboriculture FIX LINK", "#" %> or 1 copy <%= link_to "A New Tree Biology and Dictionary FIX LINK","#" %> - $22 to Canada, $26 to all other countries
+			</li>
+			<li>1 set <%= link_to "Complete Library FIX LINK", "#" %> - $43 to Canada, $62 to all other countries</li>
+		</ul>
+  </div>
+  <div id="tabs-6">
+  	<ul>
+  		<li>Returns may be made only after <%= link_to "contacting", pages_contact_path %> Shigo and Trees, Associates LLC prior to item return.</li>
+  		<li>All return items must be shipped at sender’s expense.</li> 
+  		<li>All return items must be received in like new condition without marks, stickers or tags, or damage of any kind.</li> 
+  		<li>Items that are sold as a set or grouping must be returned in total.</li> 
+  		<li>A 15% restocking fee will be deducted from the refund due.</li><li>Return requests must be made within 30 days of order receipt.</li>
+  		<li>All items are copyrighted material and may not be copied in any way.</li> 
+  		<li>Refunds will be made by check unless originally paid by credit card, in which case you must state that a credit card refund is preferred.</li>
+  	</ul>
+  </div>
+</div>

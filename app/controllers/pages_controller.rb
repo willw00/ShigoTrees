@@ -3,8 +3,8 @@ class PagesController < ApplicationController
   	@title = "Home"
   end
 
-  def info
-  	@title = "Info"
+  def order_info
+  	@title = "Order Info"
   end
 
   def about
@@ -12,6 +12,11 @@ class PagesController < ApplicationController
   end
 
   def alex
-  	@title = "Alex"
+  	@title = "Alex Shigo"
   end
+
+  def contact
+    @title = "Contact"
+  end
+
 end

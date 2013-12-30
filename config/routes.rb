@@ -1,8 +1,9 @@
 ShigoTrees::Application.routes.draw do
-  get "pages/info"
+  get "pages/order_info"
   get "pages/alex"
   get "pages/home"
   get "pages/about"
+  get "pages/contact"
   get "products/index"
   get "products/show"
   # The priority is based upon order of creation: first created -> highest priority.
