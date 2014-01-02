@@ -1,0 +1,9 @@
+<ul class="book-list">
+	<% @books.each do |book| %>
+	<li class="book">
+		<h4><%= book.title %></h4>
+		<p class="about"><%= book.description %></p>
+		<%= image_tag(book.image_url) %>
+	</li>
+	<% end %>
+</ul>
