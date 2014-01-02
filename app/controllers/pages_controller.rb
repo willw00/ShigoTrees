@@ -19,4 +19,7 @@ class PagesController < ApplicationController
     @title = "Contact"
   end
 
+  def scholarships
+    @title = "Scholarships"
+  end
 end
