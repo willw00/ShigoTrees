@@ -2,9 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-p.about {
+p.desc {
 	text-indent: 20px;
-	width: 740px;
-	margin: 0 auto;
+	width: 720px;
 	font-size: 13px;
+}
+
+
+ul.book-list {
+	padding: 0px;
+}
+
+li.book-right, li.book-left {
+	list-style: none;
+	overflow:hidden;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+li.book-right {
+	background-color: whitesmoke;
+	img {
+		float: left;
+		margin-right: 5px;
+	}
+}
+
+li.book-left {
+	background-color: #EBE9E9;
+	img {
+		float: right;
+	}
+
+	span.price, button.add_to_cart {
+		float: right;
+		margin-right: 5px;
+	}
 }

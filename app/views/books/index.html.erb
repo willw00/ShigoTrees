@@ -1,9 +1,12 @@
 <ul class="book-list">
 	<% @books.each do |book| %>
-	<li class="book">
-		<h4><%= book.title %></h4>
-		<p class="about"><%= book.description %></p>
+	<li class="<%= cycle('book-right', 'book-left') %>">
+		<h4><%= book.long_title %></h4>
 		<%= image_tag(book.image_url) %>
+		<p class="desc"><%= book.description %></p>
+		<span class="info"><%= link_to 'More info', book %></span>
+		<span class="price">$<%= sprintf("%05.2f", book.price) %></span>
+		<button class="add_to_cart" action="#">Add To Cart</button>
 	</li>
 	<% end %>
 </ul>
